@@ -6,19 +6,34 @@
 
 # 1. Write a function that does not take any arguments and
 #    prints "Hello World".
+def print_hello_world():
+    """Prints 'Hello World'"""
+    print "Hello World"
 
+print_hello_world()
 
 # 2. Write a function that takes a name as a string and
 #    prints "Hi" followed by the name.
+def print_user_name(name):
+    """Prints name"""
+    print "Hi", name
 
+print_user_name('Taurus')
 
 # 3. Write a function that takes two integers and multiplies
 #    them together. Print the result.
+def multiply_integers(x, y):
+    """Multiplies x and y then prints the result."""
+    print x * y
 
-
+multiply_integers(5, 6)
 # 4. Write a function that takes a string and an integer and
 #    prints the string that many times
+def print_multiple_times(str, int):
+    """Prints given string number of times indicated in argument"""
+    print str * int
 
+print_multiple_times("SatanSeitanSanta", 5)
 
 # 5. Write a function that takes an integer and prints "Higher
 #    than 0" if higher than zero and "Lower than 0" if lower
