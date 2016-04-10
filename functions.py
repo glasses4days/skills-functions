@@ -95,16 +95,14 @@ def print_sign_parity(num):
         num_attributes.append("Positive")
     else:
         num_attributes.append("Negative")
-    #unpacks num_attributes and assigns to sign and parity
-    sign, parity = num_attributes
+    
+    
+    return num_attributes
+    
+#unpacks result of calling print_sign_parity and assigns to sign and parity
+sign, parity = print_sign_parity(88)
+print sign, parity
 
-    print sign, parity
-
-print_sign_parity(7)
-print_sign_parity(-5)
-print_sign_parity(4)
-print_sign_parity(-4)
-print_sign_parity(0)
 
 ################################################################
 # PART TWO
