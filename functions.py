@@ -118,10 +118,26 @@ print sign, parity
 #    If the state is California, apply a 7% tax within the function.
 #    Your function should return the total cost of the item including tax.
 
+def calculate_item_cost(price, state, tax=.05):
+    """Calculates and returns item cost with tax. If in CA, tax is 7 percent, 
+        else = to arg. If no tax give, default to 5 percent."""
+
+    if state == "CA":
+        total = price + price * .07
+    else:
+        total = price + price * tax
+
+    return "$", "{0:.2f}".format(total)
+
 # 2. Turn the block of code from the directions into a function.
 #	 Take a name and a job title as parameters, making it so the
 # 	 job title defaults to "Engineer" if a job title is not passed in.
 #	 Return the person's title and name.
+
+def return_name_and_job(name, job="Engineer"):
+    """"Returns users name and job. Defaults to engineer if no job passed."""
+    print job, name
+
 
 # 3. Given a receiver's name, receiver's job title, and sender's name, print the following letter:      
 #       Dear JOB_TITLE RECEIVER_NAME, I think you are amazing! Sincerely,
@@ -131,3 +147,11 @@ print sign, parity
 # 4. Turn the block of code from the directions into a function. This
 #    function will take a number and append it to *numbers*. It doesn't
 #    need to return anything.
+
+
+
+
+
+
+
+
