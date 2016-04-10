@@ -137,14 +137,26 @@ def calculate_item_cost(price, state, tax=.05):
 def return_name_and_job(name, job="Engineer"):
     """"Returns users name and job. Defaults to engineer if no job passed."""
     print job, name
-
+    return job, name
 
 # 3. Given a receiver's name, receiver's job title, and sender's name, print the following letter:      
 #       Dear JOB_TITLE RECEIVER_NAME, I think you are amazing! Sincerely,
 #       SENDER_NAME. 
 #    Use the function from #2 to construct the full title for the letter's greeting.
 
-# 4. Turn the block of code from the directions into a function. This
+def print_letter(sender_name, receiver_name, receiver_job="Engineer"):
+    """Calls return_name_and_job to fill receiver. Prints letter with this info
+    and sender name."""
+    receiver = return_name_and_job(receiver_name, receiver_job)
+    
+    print receiver
+
+    print "Dear", receiver,", I think you are amazing! Sincerely,",sender_name
+    return
+
+print_letter('Cooper', 'Taurus')
+
+    # 4. Turn the block of code from the directions into a function. This
 #    function will take a number and append it to *numbers*. It doesn't
 #    need to return anything.
 
