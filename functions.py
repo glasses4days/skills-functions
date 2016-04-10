@@ -156,14 +156,20 @@ def print_letter(sender_name, receiver_name, receiver_job="Engineer"):
 
 print_letter('Cooper', 'Taurus')
 
+#I couldn't quite figure out exactly how to do this. Specifically it's printing 
+#out weird. I was spending too long, so I moved on to the next excercise
+
     # 4. Turn the block of code from the directions into a function. This
 #    function will take a number and append it to *numbers*. It doesn't
 #    need to return anything.
 
+def append_to_numbers(num):
+    """Takes a number and appends it to numbers."""
+    numbers = [1, 2]
+    numbers.append(num)
+    print numbers
 
-
-
-
+append_to_numbers(3)
 
 
 
